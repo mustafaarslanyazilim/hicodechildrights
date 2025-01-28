@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hicodechildrights/color.dart';
+import 'package:hicodechildrights/puzzle_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -50,7 +51,10 @@ class _HomePageState extends State<HomePage> {
                   icon: Icons.extension,
                   label: 'Puzzle',
                   onTap: () {
-                    print("Puzzle butonuna tıklandı");
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => PuzzlePage()),
+                    );
                   },
                   imageUrl: 'lib/images/flamingo.png',
                 ),
