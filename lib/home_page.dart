@@ -53,7 +53,7 @@ class _HomePageState extends State<HomePage> {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => PuzzlePage()),
+                      MaterialPageRoute(builder: (context) => SlidePuzzle()),
                     );
                   },
                   imageUrl: 'lib/images/flamingo.png',
