@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:hicodechildrights/button.dart';
 import 'package:hicodechildrights/color.dart';
+import 'package:hicodechildrights/home_page.dart';
 import 'package:hicodechildrights/log_in.dart';
+import 'package:hicodechildrights/services/auth_service.dart';
 import 'package:hicodechildrights/sign_up.dart';
 
 class SignUpPage extends StatefulWidget {
@@ -32,7 +34,6 @@ class _SignUpPageState extends State<SignUpPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              const SizedBox(height: 10),
               // Logo and Title
               Column(
                 children: [
@@ -42,7 +43,7 @@ class _SignUpPageState extends State<SignUpPage> {
                   ),
                 ],
               ),
-              const SizedBox(height: 20),
+              const SizedBox(height: 5),
               // Email Field
               TextField(
                 decoration: InputDecoration(
@@ -53,7 +54,7 @@ class _SignUpPageState extends State<SignUpPage> {
                   ),
                 ),
               ),
-              const SizedBox(height: 20),
+              const SizedBox(height: 10),
               // Password Field
               TextField(
                 obscureText: true,
@@ -65,7 +66,7 @@ class _SignUpPageState extends State<SignUpPage> {
                   ),
                 ),
               ),
-              const SizedBox(height: 20),
+              const SizedBox(height: 10),
               // Confirm Password Field
               TextField(
                 obscureText: true,
@@ -81,11 +82,20 @@ class _SignUpPageState extends State<SignUpPage> {
               // Gradient Button
               GradientButton(
                 text: 'Kayıt Ol',
-                onPressed: () {
-                  Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => LogInPage()),
-                      );
+                onPressed: () async {
+                  final authService = AuthService();
+                  final userCredential = await authService.signup(
+                    'email@example.com',
+                    'password',
+                    'password',
+                    context,
+                  );
+                  if (userCredential != null) {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => LogInPage()),
+                    );
+                  }
                 },
               ),
               const SizedBox(height: 20),
@@ -114,7 +124,16 @@ class _SignUpPageState extends State<SignUpPage> {
                         fit: BoxFit.contain, // Prevent image overflow
                       ),
                       iconSize: 40,
-                      onPressed: () {},
+                      onPressed: () async {
+                        final authService = AuthService();
+                        final userCredential = await authService.signInWithGoogle(context);
+                        if (userCredential != null) {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => HomePage()),
+                          );
+                        }
+                      },
                     ),
                   ),
                   const SizedBox(width: 20),
@@ -127,7 +146,16 @@ class _SignUpPageState extends State<SignUpPage> {
                         fit: BoxFit.contain, // Prevent image overflow
                       ),
                       iconSize: 40,
-                      onPressed: () {},
+                        onPressed: () async {
+                        final authService = AuthService();
+                        final userCredential = await authService.signInWithApple(context);
+                        if (userCredential != null) {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => HomePage()),
+                          );
+                        }
+                      },
                     ),
                   ),
                 ],

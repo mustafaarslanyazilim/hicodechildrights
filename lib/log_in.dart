@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:hicodechildrights/button.dart';
 import 'package:hicodechildrights/color.dart';
 import 'package:hicodechildrights/forgot_password.dart';
+import 'package:hicodechildrights/home_page.dart';
 import 'package:hicodechildrights/otp_verification.dart';
+import 'package:hicodechildrights/services/auth_service.dart';
 import 'package:hicodechildrights/sign_up.dart';
 
 class LogInPage extends StatefulWidget {
@@ -33,7 +35,7 @@ class _LogInPageState extends State<LogInPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              const SizedBox(height: 30),
+              const SizedBox(height: 20),
               // Logo and Title
               Column(
                 children: [
@@ -43,7 +45,7 @@ class _LogInPageState extends State<LogInPage> {
                   ),
                 ],
               ),
-              const SizedBox(height: 40),
+              const SizedBox(height: 30),
               // Email Field
               TextField(
                 decoration: InputDecoration(
@@ -94,11 +96,19 @@ class _LogInPageState extends State<LogInPage> {
               // Gradient Button
               GradientButton(
                 text: 'Giriş Yap',
-                onPressed: () {
-                  Navigator.push(
+                onPressed: () async {
+                  final authService = AuthService();
+                  final userCredential = await authService.signin(
+                    'email@example.com',
+                    'password',
                     context,
-                    MaterialPageRoute(builder: (context) => VerifyOTPPage()),
                   );
+                  if (userCredential != null) {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => HomePage()),
+                    );
+                  }
                 },
               ),
               const SizedBox(height: 20),
@@ -127,7 +137,17 @@ class _LogInPageState extends State<LogInPage> {
                         fit: BoxFit.contain, // Prevent image overflow
                       ),
                       iconSize: 40,
-                      onPressed: () {},
+                      onPressed: () async {
+                        final authService = AuthService();
+                        final userCredential = await authService.signInWithGoogle(context);
+                        if (userCredential != null) {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => HomePage()),
+                          );
+                        }
+
+                      },
                     ),
                   ),
                   const SizedBox(width: 20),
@@ -140,7 +160,16 @@ class _LogInPageState extends State<LogInPage> {
                         fit: BoxFit.contain, // Prevent image overflow
                       ),
                       iconSize: 40,
-                      onPressed: () {},
+                      onPressed: () async {
+                        final authService = AuthService();
+                        final userCredential = await authService.signInWithApple(context);
+                        if (userCredential != null) {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => HomePage()),
+                          );
+                        }
+                      },
                     ),
                   ),
                 ],
