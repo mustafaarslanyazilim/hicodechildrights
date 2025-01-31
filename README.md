@@ -1,16 +1,52 @@
-# hicodechildrights
 
-A new Flutter project.
+<h1> Hi-Kod 5 Mobil Uygulama Geliştirme Atölyesi </h1>
+<h1> Çocukhane Mobil Uygulaması </h1>
+<h2> Uygulama Amacı </h2>
+<pre>
+  Çocukhane, çocuklara temel haklarını eğlenceli ve etkileşimli oyunlar aracılığıyla öğretmeyi amaçlamaktadır. 
+  Çocuklar puzzle, kart eşleştirme, fark bulma gibi oyunlarla, kendi haklarını keşfederken bilinçlenir ve haklarını 
+  savunma konusunda farkındalık kazanır. Eğitici ve interaktif yapısıyla öğrenmeyi kalıcı hale getiren bu uygulama,
+  çocukların bilişsel ve sosyal gelişimine katkı sağlayarak onları daha bilinçli bireyler olarak yetiştirmeyi hedefler.
+</pre>
 
-## Getting Started
+<h2>Öne Çıkan Özellikler </h2>
+<pre>
+  1-Eğlenceli puzzle ve bulmaca oyunları
+  2-Renkli ve çocuk dostu arayüz
+  3-Basit ve anlaşılır dil kullanımı
+  4-Güvenli içerik
+</pre>
 
-This project is a starting point for a Flutter application.
+<h2>Hedef Kitle</h2>
+<pre>
+6-12 yaş arası çocuklar
+Eğitimciler ve öğretmenler
+Aileler ve ebeveynler
+</pre>
 
-A few resources to get you started if this is your first Flutter project:
+<h2>Emeği Geçenler</h2>
+<p>Derya Telli</p>
+<p>Esra Arıkan</p>
+<p>Mustafa Arslan</p>
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Uygulamanın Figma Tasarımı 
+![image](https://github.com/DeryaTelli/hicodechildrights/blob/main/assets/screenshot/Screenshot%202025-02-01%20003247.png)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Uygulama
+![image](https://github.com/DeryaTelli/hicodechildrights/blob/main/assets/screenshot/Screenshot%202025-02-01%20001054.png)
+![image](https://github.com/DeryaTelli/hicodechildrights/blob/main/assets/screenshot/Screenshot%202025-02-01%20001106.png)
+![image](https://github.com/DeryaTelli/hicodechildrights/blob/main/assets/screenshot/Screenshot%202025-02-01%20001113.png)
+![image](https://github.com/DeryaTelli/hicodechildrights/blob/main/assets/screenshot/Screenshot%202025-02-01%20001123.png)
+![image](https://github.com/DeryaTelli/hicodechildrights/blob/main/assets/screenshot/Screenshot%202025-02-01%20001130.png)
+![image](https://github.com/DeryaTelli/hicodechildrights/blob/main/assets/screenshot/Screenshot%202025-02-01%20001139.png)
+![image](https://github.com/DeryaTelli/hicodechildrights/blob/main/assets/screenshot/Screenshot%202025-02-01%20001149.png)
+![image](https://github.com/DeryaTelli/hicodechildrights/blob/main/assets/screenshot/Screenshot%202025-02-01%20001206.png)
+![image](https://github.com/DeryaTelli/hicodechildrights/blob/main/assets/screenshot/Screenshot%202025-02-01%20001220.png)
+![image](https://github.com/DeryaTelli/hicodechildrights/blob/main/assets/screenshot/Screenshot%202025-02-01%20001235.png)
+![image](https://github.com/DeryaTelli/hicodechildrights/blob/main/assets/screenshot/Screenshot%202025-02-01%20001247.png)
+![image](https://github.com/DeryaTelli/hicodechildrights/blob/main/assets/screenshot/Screenshot%202025-02-01%20001301.png)
+
+
+
+
+
