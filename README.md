@@ -3,10 +3,12 @@
 <h1> Çocukhane Mobil Uygulaması </h1>
 <h2> Uygulama Amacı </h2>
 <pre>
-  Çocukhane, çocuklara temel haklarını eğlenceli ve etkileşimli oyunlar aracılığıyla öğretmeyi amaçlamaktadır. 
-  Çocuklar puzzle, kart eşleştirme, fark bulma gibi oyunlarla, kendi haklarını keşfederken bilinçlenir ve haklarını 
-  savunma konusunda farkındalık kazanır. Eğitici ve interaktif yapısıyla öğrenmeyi kalıcı hale getiren bu uygulama,
-  çocukların bilişsel ve sosyal gelişimine katkı sağlayarak onları daha bilinçli bireyler olarak yetiştirmeyi hedefler.
+  Çocukhane, çocuklara temel haklarını eğlenceli ve etkileşimli oyunlar aracılığıyla 
+  öğretmeyi amaçlamaktadır. Çocuklar puzzle, kart eşleştirme, fark bulma gibi oyunlarla,
+  kendi haklarını keşfederken bilinçlenir ve haklarını savunma konusunda farkındalık kazanır.
+  Eğitici ve interaktif yapısıyla öğrenmeyi kalıcı hale getiren bu uygulama,
+  çocukların bilişsel ve sosyal gelişimine katkı sağlayarak onları daha bilinçli 
+  bireyler olarak yetiştirmeyi hedefler.
 </pre>
 
 <h2>Öne Çıkan Özellikler </h2>
@@ -28,6 +30,9 @@ Aileler ve ebeveynler
 <p>Derya Telli</p>
 <p>Esra Arıkan</p>
 <p>Mustafa Arslan</p>
+
+## Uygulama Sunum
+https://www.canva.com/design/DAGdyNSPUZ0/opYwDrqSeFofgaHH9ceG2w/edit?utm_content=DAGdyNSPUZ0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
 ## Uygulamanın Figma Tasarımı 
 ![image](https://github.com/DeryaTelli/hicodechildrights/blob/main/assets/screenshot/Screenshot%202025-02-01%20003247.png)
